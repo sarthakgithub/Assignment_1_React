@@ -7,7 +7,7 @@
     "start": "npm-run-all --parallel build start2",
     "build": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildProd": "webpack --config webpack.prod.config.js",
+    "buildProd": "webpack-dev-server --config webpack.prod.config.js",
     "startProd": "npm-run-all --parallel buildProd start2",
     "start2": "node server/server",
     "watch": "webpack --watch"
