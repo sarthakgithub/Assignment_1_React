@@ -19,10 +19,7 @@ module.exports = {
 		extensions : ['.js','.jsx','.json']
 	},
 	plugins : [
-		new webpack.HotModuleReplacementPlugin(),
-		new webpack.optimize.UglifyJsPlugin({
-			minimize: true
-		})
+		new webpack.HotModuleReplacementPlugin()
 	],
 	module : {
 		rules : [
